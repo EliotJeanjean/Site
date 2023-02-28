@@ -6,50 +6,31 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>My Website</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="row">
-        <div class="column sidebar">
-          <h2>Sidebar</h2>
-          <p>This is the sidebar.</p>
-        </div>
-        <div class="column main">
-          <h2>Main Content</h2>
-          <p>This is the main content.</p>
-        </div>
+    <header>
+      <nav class="main_nav">
+        <ul>
+          <li><a href="#" data-div="div1">Page Nº 01</a></li>
+          <li><a href="#" data-div="div2">Page Nº 02</a></li>
+          <li><a href="#" data-div="div3">Page Nº 03</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="main_container">
+    <div class="content_display">
+      <div id="div1" class="content">
+        <h2>Content 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
       </div>
-     <div class="main_container">
-  <nav class="main_nav">
-    <ul>
-      <li><a href="#" data-div="div1">Page Nº 01</a></li>
-      <li><a href="#" data-div="div2">Page Nº 02</a></li>
-      <li><a href="#" data-div="div3">Page Nº 03</a></li>
-    </ul>
-  </nav>
-  <div class="content_display">
-    <div id="div1" class="content">
-      <h2>Content 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-    </div>
-    <div id="div2" class="content">
-      <h2>Content 2</h2>
-      <p>Phasellus tempus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
-    </div>
-    <div id="div3" class="content">
-      <h2>Content 3</h2>
-      <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+      <div id="div2" class="content">
+        <h2>Content 2</h2>
+        <p>Phasellus tempus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+      </div>
+      <div id="div3" class="content">
+        <h2>Content 3</h2>
+        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+      </div>
     </div>
   </div>
-</div>
       <footer>
         <p>Copyright © My Website 2023.
       </footer>
