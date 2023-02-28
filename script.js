@@ -4,7 +4,7 @@ const contentDivs = document.querySelectorAll('.content');
 navLinks.forEach(function(link) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
-    const divId = this.dataset.div;
+    const divId = this.getAttribute('data-div');
     contentDivs.forEach(function(div) {
       div.classList.remove('active');
     });
