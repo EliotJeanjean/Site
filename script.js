@@ -1,6 +1,6 @@
 const navLinks = document.querySelectorAll('.main_nav a');
 const contentDivs = document.querySelectorAll('.content');
-const button = document.querySelector("button");
+const button = document.querySelector("agrandir");
 const box = document.querySelector(".content_display");
 
 button.addEventListener("click", () => {
