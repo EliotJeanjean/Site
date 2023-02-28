@@ -12,22 +12,19 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-var button = document.querySelector("#width_button");
-const button = document.getElementById('toggle_button');
+window.onload = function() {
+  var button = document.getElementById("toggleButton");
+  var contentDisplay = document.querySelector(".content_display");
 
-function toggleWidth() {
-  if (content_display.classList.contains('content_display_small')) {
-    content_display.classList.remove('content_display_small');
-    content_display.classList.add('content_display_large');
-    button.innerHTML = "Reduce Width";
-  } else {
-    content_display.classList.remove('content_display_large');
-    content_display.classList.add('content_display_small');
-    button.innerHTML = "Enlarge Width";
-  }
-}
+  button.onclick = function() {
+    contentDisplay.classList.toggle("expanded");
 
-button.addEventListener('click', function() {
-  toggleWidth();
-});
-
+    if (contentDisplay.classList.contains("expanded")) {
+      document.getElementById("toggleButtonIcon").className = "fas fa-compress-alt";
+      document.getElementById("toggleButton").innerHTML = "Full Width";
+    } else {
+      document.getElementById("toggleButtonIcon").className = "fas fa-expand-alt";
+      document.getElementById("toggleButton").innerHTML = "Small Width";
+    }
+  };
+};
