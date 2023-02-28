@@ -1,6 +1,5 @@
 const navLinks = document.querySelectorAll('.main_nav a');
 const contentDivs = document.querySelectorAll('.content');
-const contentDisplay = document.getElementById('content_display');
 
 navLinks.forEach(function(link) {
   link.addEventListener('click', function(event) {
@@ -13,23 +12,21 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
+var button = document.querySelector("#width_button");
+const button = document.getElementById('toggle_button');
 
-function changeButtonState() {
-  let button = document.getElementById("agrandir");
-
-  button.addEventListener("click", function() {
-    if (button.classList.contains("agrandir")) {
-      contentDisplay.style.width = "80%";
-      contentDisplay.style.transition = "width 0.5s ease-out";
-      button.innerHTML = "Réduire";
-      button.classList.remove("agrandir");
-    } else {
-      contentDisplay.style.width = "50%";
-      contentDisplay.style.transition = "width 0.5s ease-out";
-      button.innerHTML = "Agrandir";
-      button.classList.add("agrandir");
-    }
-  });
+function toggleWidth() {
+  if (content_display.classList.contains('content_display_small')) {
+    content_display.classList.remove('content_display_small');
+    content_display.classList.add('content_display_large');
+    button.innerHTML = "Reduce Width";
+  } else {
+    content_display.classList.remove('content_display_large');
+    content_display.classList.add('content_display_small');
+    button.innerHTML = "Enlarge Width";
+  }
 }
 
-changeButtonState();
+button.addEventListener('click', function() {
+  toggleWidth();
+});
