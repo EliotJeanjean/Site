@@ -19,9 +19,12 @@ body {
 }
 
 header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+      width: 50%;
+  box-sizing: border-box;
 }
 
 header a {
@@ -47,10 +50,8 @@ header h1 {
   display: none;
 }
 .main_nav {
-    width: 50%;
   background-color: #f1f1f1;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .main_nav ul {
