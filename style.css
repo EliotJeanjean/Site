@@ -19,12 +19,13 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-      width: 50%;
-  box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 0px;
+width: 50%;
+box-sizing: border-box;
+background: beige;
 }
 
 header a {
