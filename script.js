@@ -12,15 +12,6 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-const button = document.getElementById("agrandir");
-
-button.addEventListener("click", function() {
-  if (button.textContent === "Agrandir") {
-    button.textContent = "Réduire";
-  } else {
-    button.textContent = "Agrandir";
-  }
-});
 function changeButtonState() {
   var button = document.getElementById("agrandir");
   var content_display = document.getElementById("content_display");
