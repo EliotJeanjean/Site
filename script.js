@@ -12,7 +12,7 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-const content_display = document.querySelector('.content_display');
+var button = document.querySelector("#width_button");
 const button = document.getElementById('toggle_button');
 
 function toggleWidth() {
