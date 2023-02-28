@@ -77,6 +77,8 @@ header h1 {
   box-sizing: border-box;
   overflow-y: auto;
   display: none;
+    margin-left: auto;
+  margin-right: 0;
 }
 
 .content.active {
