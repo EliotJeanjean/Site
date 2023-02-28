@@ -5,6 +5,18 @@
     <title>Two Column Layout with Navigation</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = e.target.getAttribute('href');
+    const targetElement = document.querySelector(target);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+  </script>
   <body>
     <div class="container">
       <header>
