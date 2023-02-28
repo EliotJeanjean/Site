@@ -45,8 +45,6 @@ header h1 {
   box-sizing: border-box;
   overflow-y: auto;
   display: none;
-    margin-right: auto;
-  margin-left: 0;
 }
 .main_nav {
   width: 50%;
