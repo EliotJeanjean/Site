@@ -1,5 +1,7 @@
 const navLinks = document.querySelectorAll('.main_nav a');
 const contentDivs = document.querySelectorAll('.content');
+const button = document.getElementById('agrandir');
+const contentDisplay = document.getElementById('content_display');
 
 navLinks.forEach(function(link) {
   link.addEventListener('click', function(event) {
@@ -12,19 +14,17 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-let button = document.getElementById("agrandir");
-let content = document.getElementById("content_display");
 
-button.addEventListener("click", function() {
-  if (button.classList.contains("agrandir")) {
-    content.style.width = "80%";
-    content.style.transition = "width 0.5s ease-out";
-    button.innerHTML = "Réduire";
-    button.classList.remove("agrandir");
+button.addEventListener('click', function() {
+  if (button.classList.contains('agrandir')) {
+    contentDisplay.style.width = '80%';
+    contentDisplay.style.transition = 'width 0.5s ease-out';
+    button.innerHTML = 'Réduire';
+    button.classList.remove('agrandir');
   } else {
-    content.style.width = "50%";
-    content.style.transition = "width 0.5s ease-out";
-    button.innerHTML = "Agrandir";
-    button.classList.add("agrandir");
+    contentDisplay.style.width = '50%';
+    contentDisplay.style.transition = 'width 0.5s ease-out';
+    button.innerHTML = 'Agrandir';
+    button.classList.add('agrandir');
   }
 });
