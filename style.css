@@ -75,11 +75,14 @@ header h1 {
   background-color: #eee;
 }
 
+.content_display.toggle {
+          width: 90%;
+}
 .content_display {
           width: 50%;
     box-sizing: border-box;
     padding: 20px;
-      transition: width 0.5s ease;
+  transition: 0.5s;
 }
 .content.active {
   display: block;
