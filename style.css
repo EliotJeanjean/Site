@@ -12,6 +12,14 @@ body {
   color: #333;
 }
 
+.main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,6 +40,44 @@ header a {
 header h1 {
   font-size: 2em;
   font-weight: bold;
+}
+
+.main_nav {
+  width: 250px;
+}
+
+.main_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.main_nav li {
+  margin: 10px 0;
+}
+
+.main_nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main_nav a:hover {
+  background-color: #eee;
+}
+
+.image_display {
+  width: calc(100% - 250px);
+}
+
+.image_display img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 nav ul {
