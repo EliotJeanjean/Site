@@ -12,7 +12,6 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-function changeButtonState() {
 let button = document.getElementById("agrandir");
 let content = document.getElementById("content_display");
 
@@ -29,4 +28,3 @@ button.addEventListener("click", function() {
     button.classList.add("agrandir");
   }
 });
-}
