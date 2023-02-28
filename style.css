@@ -12,14 +12,6 @@ body {
   color: #333;
 }
 
-.main_container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,6 +34,14 @@ header h1 {
   font-weight: bold;
 }
 
+.main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main_nav {
   width: 250px;
 }
@@ -51,8 +51,6 @@ header h1 {
   padding: 0;
   margin: 0;
 }
-
-
 
 .main_nav li {
   margin: 10px 0;
@@ -70,13 +68,15 @@ header h1 {
   background-color: #eee;
 }
 
-.image_display {
+.content_display {
   width: calc(100% - 250px);
 }
 
-.image_display img {
-  max-width: 100%;
-  height: auto;
+.content {
+  display: none;
+}
+
+.content.active {
   display: block;
 }
 
