@@ -12,17 +12,22 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-const toggleWidthBtn = document.querySelector('#toggle-width-btn');
-const contentDisplay = document.querySelector('.content_display');
+const content_display = document.querySelector('.content_display');
+const button = document.getElementById('toggle_button');
 
-toggleWidthBtn.addEventListener('click', () => {
-  contentDisplay.classList.toggle('content_display--full');
-toggleWidthBtn.addEventListener('click', () => {
-  if (contentDisplay.classList.contains('content_display--full')) {
-    contentDisplay.classList.remove('content_display--full');
-    toggleWidthBtn.textContent = 'Agrandir';
+function toggleWidth() {
+  if (content_display.classList.contains('content_display_small')) {
+    content_display.classList.remove('content_display_small');
+    content_display.classList.add('content_display_large');
+    button.innerHTML = "Reduce Width";
   } else {
-    contentDisplay.classList.add('content_display--full');
-    toggleWidthBtn.textContent = 'Réduire';
+    content_display.classList.remove('content_display_large');
+    content_display.classList.add('content_display_small');
+    button.innerHTML = "Enlarge Width";
   }
+}
+
+button.addEventListener('click', function() {
+  toggleWidth();
 });
+
