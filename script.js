@@ -17,7 +17,6 @@ const contentDisplay = document.querySelector('.content_display');
 
 toggleWidthBtn.addEventListener('click', () => {
   contentDisplay.classList.toggle('content_display--full');
-});
 toggleWidthBtn.addEventListener('click', () => {
   if (contentDisplay.classList.contains('content_display--full')) {
     contentDisplay.classList.remove('content_display--full');
