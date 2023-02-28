@@ -12,3 +12,9 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
+const toggleWidthBtn = document.querySelector('#toggle-width-btn');
+const contentDisplay = document.querySelector('.content_display');
+
+toggleWidthBtn.addEventListener('click', () => {
+  contentDisplay.classList.toggle('content_display--full');
+});
