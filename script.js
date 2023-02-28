@@ -21,3 +21,19 @@ button.addEventListener("click", function() {
     button.textContent = "Agrandir";
   }
 });
+function changeButtonState() {
+  var button = document.getElementById("agrandir");
+  var content_display = document.getElementById("content_display");
+
+  if (button.classList.contains("agrandir-state")) {
+    content_display.style.width = "90%";
+    button.innerHTML = "Réduire <i class='fas fa-compress'></i>";
+    button.classList.remove("agrandir-state");
+    button.classList.add("reduire-state");
+  } else {
+    content_display.style.width = "50%";
+    button.innerHTML = "Agrandir <i class='fas fa-expand'></i>";
+    button.classList.remove("reduire-state");
+    button.classList.add("agrandir-state");
+  }
+}
