@@ -177,13 +177,13 @@ nav a:hover {
     margin: 0 10px;
   }
 }
-.agrandir {
+agrandir {
 
 }
-expand_btn.clicked {
+.expand_btn.clicked {
   background-image: url('cross.jpg');
 }
-expand_btn {
+.expand_btn {
   background-image: url('next.png');
     background-size: cover;
   background-position: center;
