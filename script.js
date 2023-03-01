@@ -18,7 +18,7 @@ navLinks.forEach(function(link) {
   });
 });
 const buttonToggle = document.querySelector('.expand_button');
-buttonToggle.addEventListener('click', toggleClass);
+buttonToggle.addEventListener('click', expandbuttonClass);
 function toggleClass(){
   const element = document.querySelector('.expand_button');
   element.classList.toggle('expand_button_clicked');
