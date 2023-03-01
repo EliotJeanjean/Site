@@ -21,5 +21,5 @@ const buttonToggle = document.querySelector('.expand_btn');
 buttonToggle.addEventListener('click', toggleClass);
 function toggleClass(){
   const element = document.querySelector('.expand_btn');
-  element.classList.toggle('expand_button_clicked');
+  element.classList.toggle('expand_btn_clicked');
 }
