@@ -81,6 +81,7 @@ header h1 {
           width: 150%;
 }
 .content_display {
+  display:flex;
           width: 50%;
     box-sizing: border-box;
     padding: 20px;
@@ -193,9 +194,8 @@ margin-right: -35px;
     background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
-  margin:auto;
   cursor: pointer;
-float:right;
+
 }
 .expand_btn_clicked {
   background-image: url('cross.png')!important;
