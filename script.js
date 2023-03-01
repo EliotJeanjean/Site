@@ -17,3 +17,7 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
+function changeBackground() {
+  const button = document.querySelector('.agrandir');
+  button.classList.add('clicked');
+}
