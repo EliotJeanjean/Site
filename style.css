@@ -186,14 +186,14 @@ agrandir {
     width: 24px;
   height: 24px;
   padding: 0;
-  padding-right:-20px;
+margin-right: -35px;
   border: none;
   background-color: transparent;
   background-image: url('next.png');
     background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
-  display: inline-block;
+  margin:auto;
   cursor: pointer;
 float:right;
 }
