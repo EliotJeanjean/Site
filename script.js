@@ -17,15 +17,15 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-var switch = 0, element = document.getElementById("agrandir"), "url('fleche.png')", "url('croix.png')";
+var switch = 0, element = document.getElementById("agrandir"), "url('cross.png')", "url('next.png')";
 element.onclick = function(){
 
             if (switch == 0){
-                element.style.backgroundImage("url('fleche.png')");
+                element.style.backgroundImage("url('cross.png')");
                 switch = 1;
                 }
             else {
-                        element.style.backgroundImage("url('croix.png')");
+                        element.style.backgroundImage("url('next.png')");
                 switch = 0
                 }
                 }
