@@ -178,5 +178,5 @@ nav a:hover {
   }
 }
 .agrandir {
-background:red;
+background-image: url("cross.png");
 }
