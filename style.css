@@ -181,15 +181,7 @@ agrandir {
 
 }
 .expand_btn_clicked {
-  background-image: url('cross.jpg');
-      width: 24px;
-  height: 24px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-    background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease;
+  background-image: url('cross.jpg')!important;
 }
 .expand_btn {
     width: 24px;
