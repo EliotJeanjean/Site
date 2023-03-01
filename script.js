@@ -16,16 +16,4 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-const box = document.querySelector(".content_display");
-var switch = 0, element = document.getElementById("agrandir"), img1, img2;
-element.onclick = function(){
 
-            if (switch == 0){
-                element.style.backgroundImage(img1);
-                switch = 1;
-                }
-            else {
-                        element.style.backgroundImage(img2);
-                switch = 0
-                }
-                }
