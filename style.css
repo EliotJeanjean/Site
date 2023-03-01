@@ -184,7 +184,7 @@ expand_btn.clicked {
   background-image: url('cross.jpg');
 }
 expand_btn {
-  background-image: url("next.png");
+  background-image: url('next.png');
     background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
