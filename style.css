@@ -180,9 +180,6 @@ nav a:hover {
 agrandir {
 
 }
-.expand_btn_clicked {
-  background-image: url('cross.jpg')!important;
-}
 .expand_btn {
     width: 24px;
   height: 24px;
@@ -193,6 +190,9 @@ agrandir {
     background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
+}
+.expand_btn_clicked {
+  background-image: url('cross.jpg')!important;
 }
 
 
