@@ -192,8 +192,7 @@ agrandir {
   transition: all 0.3s ease;
   display: inline-block;
   cursor: pointer;
-  position : relative;
-  right: -10px;
+float:right;
 }
 .expand_btn_clicked {
   background-image: url('cross.png')!important;
