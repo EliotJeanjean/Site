@@ -190,6 +190,10 @@ agrandir {
     background-size: cover;
   background-position: center;
   transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;  
 }
 .expand_btn_clicked {
   background-image: url('cross.png')!important;
