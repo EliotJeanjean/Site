@@ -192,7 +192,7 @@ agrandir {
   transition: all 0.3s ease;
 }
 .expand_btn_clicked {
-  background-image: url('cross.jpg')!important;
+  background-image: url('cross.png')!important;
 }
 
 
