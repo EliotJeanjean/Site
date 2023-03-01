@@ -184,6 +184,11 @@ agrandir {
   background-image: url('cross.jpg');
 }
 .expand_btn {
+    width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   background-image: url('next.png');
     background-size: cover;
   background-position: center;
