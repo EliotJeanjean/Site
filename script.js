@@ -18,6 +18,6 @@ navLinks.forEach(function(link) {
   });
 });
 function changeBackground() {
-  const button = document.querySelector('.agrandir');
+  const button = document.querySelector('.expand_btn');
   button.classList.add('clicked');
 }
