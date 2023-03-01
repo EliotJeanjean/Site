@@ -17,7 +17,12 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  var button = document.querySelector(".expand_button");
 function changeBackground() {
   const button = document.querySelector('.expand_btn');
   button.classList.add('clicked');
 }
+  button.addEventListener("click", chngebackground);
+});
+
