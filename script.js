@@ -17,4 +17,15 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
+var switch = 0, element = document.getElementById("agrandir"), "url('fleche.png')", "url('croix.png')";
+element.onclick = function(){
 
+            if (switch == 0){
+                element.style.backgroundImage("url('fleche.png')");
+                switch = 1;
+                }
+            else {
+                        element.style.backgroundImage("url('croix.png')");
+                switch = 0
+                }
+                }
