@@ -17,9 +17,9 @@ navLinks.forEach(function(link) {
     activeDiv.classList.add('active');
   });
 });
-const buttonToggle = document.querySelector('.expand_button');
-buttonToggle.addEventListener('click', expandbuttonClass);
+const buttonToggle = document.querySelector('.expand_btn');
+buttonToggle.addEventListener('click', toggleClass);
 function toggleClass(){
-  const element = document.querySelector('.expand_button');
+  const element = document.querySelector('.expand_btn');
   element.classList.toggle('expand_button_clicked');
 }
